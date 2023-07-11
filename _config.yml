@@ -13,47 +13,47 @@ baseurl: ""
 lang: en
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Shanghai
+timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Chirpy # the main title
+title: Night's Devlog # the main title
 
-tagline: A text-focused Jekyll theme # it will display as the sub-title
+tagline: 공부하는 블로그입니다. # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
-  A minimal, responsive and feature-rich Jekyll theme for technical writing.
+  공부하는 블로그입니다.
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: ""
+url: "https://LeeKangW.github.io"
 
 github:
-  username: github_username # change to your github username
+  username: LeeKangW # change to your github username
 
-twitter:
-  username: twitter_username # change to your twitter username
+#twitter:
+#  username: twitter_username # change to your twitter username
 
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
-  email: example@domain.com # change to your email address
+  name: Night
+  email: leegw1371@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your twitter homepage
-    - https://github.com/username # change to your github homepage
+    # - https://twitter.com/username # change to your twitter homepage
+    - https://github.com/LeeKangW # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # fill in to your verification string
+google_site_verification: C4eUrV1URjZkuybWTN2qCbrpXB3tlfBfsnzwUyZ_XbU # fill in to your verification string
 
 # ↑ --------------------------
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: G-M41H0PRK7N # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
 #
@@ -66,17 +66,17 @@ google_analytics:
 #     light  - Use the light color scheme
 #     dark   - Use the dark color scheme
 #
-theme_mode: # [light|dark]
+theme_mode: light # [light|dark]
 
 # The CDN endpoint for images.
 # Notice that once it is assigned, the CDN url
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn:
+img_cdn: ""
 
 # the avatar on sidebar, support local or CORS resources
-avatar:
+avatar: "/assets/img/blog_icon.jpg"
 
 # boolean type, the global switch for TOC in posts.
 toc: true
@@ -88,8 +88,9 @@ comments:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: # <gh-username>/<repo>
-    issue_term: # < url | pathname | title | ...>
+    repo: LeeKangW/LeeKangW.github.io # <gh-username>/<repo>
+    issue_term: pathname # < url | pathname | title | ...>
+    theme: github-light
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
@@ -193,3 +194,5 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+    
+plugins: [jekyll-youtube]
